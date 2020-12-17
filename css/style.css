@@ -75,6 +75,7 @@ html {
 
 body {
   font-family: var(--font-main);
+  box-sizing: border-box;
 }
 
 /* COMMON */
@@ -88,7 +89,7 @@ body {
 }
 
 .mobile-elem {
-  display: block;
+  display: block !important;
 }
 
 .accent-btn {
@@ -154,7 +155,6 @@ body {
 }
 
 .modal-active {
-  display: block;
   opacity: 1;
   pointer-events: all;
 }
@@ -723,7 +723,12 @@ body {
 
 .team-projects .container {
   padding-bottom: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+}
+
+.team-projects {
+  position: relative;
+  overflow: hidden;
 }
 
 .team-projects-title {
@@ -1042,7 +1047,7 @@ body {
   }
 
   .mobile-elem {
-    display: none;
+    display: none !important;
   }
 
   .tablet-elem {
